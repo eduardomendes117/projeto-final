@@ -2,6 +2,8 @@
 
 Projeto final — Catálogo de filmes (trabalho prático de Programação para Internet I)
 
+Link do deploy: https://eduardomendes117.github.io/projeto-final/
+
 ## Descrição
 
 CineHub é uma interface simples para pesquisar e visualizar informações de filmes usando a API do The Movie Database (TMDB). O projeto exibe um carrossel com filmes em tendência, permite buscar por títulos, ver detalhes (sinopse, elenco, diretor, nota e trailer) e salvar filmes nos favoritos (localStorage).
