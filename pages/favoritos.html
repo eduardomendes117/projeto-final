@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Favoritos — CineHub</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shortcut icon" href="../assets/film.ico" type="image/x-icon" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+
+  <body>
+    <!-- HEADER / NAV -->
+    <nav class="top-nav-fav">
+      <div class="container nav-container">
+        <a href="../index.html" class="logo">CineHub</a>
+      </div>
+    </nav>
+
+    <!-- MAIN -->
+    <main class="favoritos-container">
+      <section class="container" aria-labelledby="fav-title">
+        <h2 id="fav-title">Meus Favoritos</h2>
+
+        <!-- LISTA DE FAVORITOS -->
+        <div id="listaFavoritos" class="cards-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>CineHub</h3>
+            <p>Seu catálogo completo de filmes em tendência</p>
+          </div>
+          <div class="footer-section">
+            <h4>Navegação</h4>
+            <ul>
+              <li><a href="../index.html">Início</a></li>
+              <li><a href="favoritos.html">Meus Favoritos</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Sobre</h4>
+            <p>Projeto Final — Programação para Internet I</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 CineHub. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/dom.js"></script>
+
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>CineHub — Catálogo de Filmes</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="assets/film.ico" type="image/x-icon" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <nav class="top-nav">
+      <div class="container nav-container">
+        <a href="index.html" class="logo">CineHub</a>
+
+        <div class="nav-actions">
+          <form id="search-form" class="search-overlay">
+            <input id="query" type="search" placeholder="Buscar filmes..." />
+            <button type="button" id="search-toggle">
+              <i data-lucide="search"></i>
+            </button>
+            <button type="submit" id="search-submit" class="hidden">
+              <i data-lucide="search"></i>
+            </button>
+          </form>
+          <a href="pages/favoritos.html" class="fav-link">
+            <i data-lucide="heart"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero-container">
+      <!-- CARROSSEL -->
+      <div id="hero-carousel" class="hero-carousel">
+        <!-- Slides serão inseridos via JavaScript -->
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- DETALHES DO FILME -->
+      <section id="detalhes-section" class="hidden">
+        <div id="detalhes-container"></div>
+      </section>
+
+      <!-- TENDÊNCIAS -->
+      <section id="trending-section">
+        <h2>Tendências</h2>
+        <div id="trending-list" class="cards-grid"></div>
+      </section>
+
+      <!-- RESULTADOS DA BUSCA -->
+      <section id="results-section" class="hidden">
+        <h2>Resultados</h2>
+        <div id="results" class="cards-grid"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>CineHub</h3>
+            <p>Seu catálogo completo de filmes em tendência</p>
+          </div>
+          <div class="footer-section">
+            <h4>Navegação</h4>
+            <ul>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="pages/favoritos.html">Meus Favoritos</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Sobre</h4>
+            <p>Trabalho Prático Final — Programação para Internet I</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 CineHub. Todos os 'direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+    <script src="js/seach.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
